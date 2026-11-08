@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viñetas del Evangelio — Bento Comic Grid</title>
+    <meta
+      name="description"
+      content="Diseño web tipo Bento con grid anidado, estilo paneles de cómic, modo claro/oscuro y animaciones CSS."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="page-header">
+      <div class="masthead" aria-hidden="true"><p>Edición especial · CSS Grid</p></div>
+      <h1>Viñetas del Evangelio</h1>
+      <p class="subtitle">
+        Maquetación tipo <strong>Bento</strong> con <strong>grid anidado</strong>, celdas de distintos
+        tamaños, variables en fichero aparte, CSS anidado, modo claro/oscuro y transiciones al pasar el
+        ratón. En pantallas &gt; 700px se muestran tres columnas; en pantallas menores se apilan.
+      </p>
+    </header>
+
+    <main id="contenido" class="bento" aria-label="Paneles de cómic en disposición bento">
+      <!-- ===== ÁREA 1: grid anidado (1 unidad, toda la fila, varias filas) ===== -->
+      <section class="area" aria-labelledby="area-1-title">
+        <h2 id="area-1-title" class="area-title">El Llamado</h2>
+        <div class="area-grid">
+          <article class="panel span-feature">
+            <img src="assets/img/portada.jpg" alt="Portada: escena de apertura con tono épico" loading="eager" />
+            <div class="caption"><strong>Portada</strong>Una historia contada en viñetas.</div>
+          </article>
+
+          <article class="panel">
+            <img src="assets/img/jesus.jpg" alt="Jesús, figura central de la escena" loading="lazy" />
+            <div class="caption"><strong>El Maestro</strong>Presencia serena.</div>
+          </article>
+
+          <article class="panel">
+            <img src="assets/img/pedro.jpg" alt="Retrato de Pedro" loading="lazy" />
+            <div class="caption"><strong>Pedro</strong>Firme y decidido.</div>
+          </article>
+
+          <article class="panel span-row">
+            <img src="assets/img/andres.jpg" alt="Retrato de Andrés" loading="lazy" />
+            <div class="caption"><strong>Andrés</strong>El primero en seguir la llamada.</div>
+          </article>
+
+          <article class="panel span-tall">
+            <img src="assets/img/milagro.jpg" alt="Escena de un milagro" loading="lazy" />
+            <div class="caption"><strong>Milagro</strong>Asombro entre la multitud.</div>
+          </article>
+
+          <article class="panel">
+            <img src="assets/img/bautismo.jpeg" alt="Escena del bautismo" loading="lazy" />
+            <div class="caption"><strong>Bautismo</strong>Un nuevo comienzo.</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== ÁREA 2 ===== -->
+      <section class="area" aria-labelledby="area-2-title">
+        <h2 id="area-2-title" class="area-title">Los Discípulos</h2>
+        <div class="area-grid">
+          <article class="panel span-tall">
+            <img src="assets/img/hermanos.jpg" alt="Dos hermanos discípulos juntos" loading="lazy" />
+            <div class="caption"><strong>Hermanos</strong>Unidos por la fe.</div>
+          </article>
+
+          <article class="panel">
+            <img src="assets/img/primos.jpg" alt="Primos entre los discípulos" loading="lazy" />
+            <div class="caption"><strong>Primos</strong>Lazos cercanos.</div>
+          </article>
+
+          <article class="panel">
+            <img src="assets/img/hijos-del-trueno.jpg" alt="Los hijos del trueno" loading="lazy" />
+            <div class="caption"><strong>Hijos del trueno</strong>Carácter ardiente.</div>
+          </article>
+
+          <article class="panel span-row">
+            <img src="assets/img/abrazo.jpg" alt="Abrazo fraternal entre discípulos" loading="lazy" />
+            <div class="caption"><strong>Abrazo</strong>Fraternidad y encuentro.</div>
+          </article>
+
+          <article class="panel span-feature">
+            <img src="assets/img/todos.jpg" alt="Grupo completo de discípulos reunidos" loading="lazy" />
+            <div class="caption"><strong>Todos juntos</strong>La comunidad se reúne.</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== ÁREA 3 ===== -->
+      <section class="area" aria-labelledby="area-3-title">
+        <h2 id="area-3-title" class="area-title">Milagros y Camino</h2>
+        <div class="area-grid">
+          <article class="panel">
+            <img src="assets/img/recaudador.jpeg" alt="Encuentro con el recaudador" loading="lazy" />
+            <div class="caption"><strong>El recaudador</strong>Una mirada que transforma.</div>
+          </article>
+
+          <article class="panel span-tall">
+            <img src="assets/img/luz-de-dios.jpeg" alt="Luz de Dios iluminando la escena" loading="lazy" />
+            <div class="caption"><strong>Luz de Dios</strong>Claridad en el horizonte.</div>
+          </article>
+
+          <article class="panel">
+            <img src="assets/img/colinas-galilea.jpg" alt="Colinas de Galilea al atardecer" loading="lazy" />
+            <div class="caption"><strong>Galilea</strong>Colinas y caminos.</div>
+          </article>
+
+          <article class="panel span-row">
+            <img src="assets/img/jesus-hacia-jerusalen.jpeg" alt="Jesús en camino hacia Jerusalén" loading="lazy" />
+            <div class="caption"><strong>Hacia Jerusalén</strong>El viaje continúa con propósito.</div>
+          </article>
+
+          <article class="panel span-feature">
+            <img src="assets/img/la-ultima-cena.jpeg" alt="La Última Cena" loading="lazy" />
+            <div class="caption"><strong>La Última Cena</strong>Un momento inolvidable.</div>
+          </article>
+
+          <article class="panel span-row">
+            <img src="assets/img/portada-2.jpg" alt="Portada alternativa de cierre" loading="lazy" />
+            <div class="caption"><strong>Epílogo</strong>Continuará…</div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+  
+   <footer style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; padding: 20px 40px; background: #151218; color: #fff; border-top: 2px solid rgba(255, 255, 255, 0.1);">
+      <p style="margin: 0; font-size: 0.9rem; max-width: 800px;">
+        Práctica 2
+      </p>
+
+      <!-- Botón de Subir / Volver arriba -->
+      <a href="#" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background: #d62828; color: #fff; font-size: 0.85rem; font-weight: bold; text-decoration: none; border-radius: 4px; border: 1.5px solid #fff; transition: background 0.2s;">
+        <span>Subir</span> <span>↑</span>
+      </a>
+    </footer>
+    
+
+    <!-- Menú flotante vertical a la izquierda -->
+  <div style="position: fixed; left: 12px; top: 90px; z-index: 9999; display: flex; flex-direction: column; gap: 6px; background: rgba(21, 18, 24, 0.95); padding: 8px; border-radius: 6px; border: 2px solid rgba(255, 255, 255, 0.3); box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);">
+    
+    <!-- Práctica 1 -->
+    <a href="https://antuan94.github.io/Practica-1/" target="_blank" style="display: flex; align-items: center; justify-content: space-between; padding: 0 10px; height: 32px; width: 115px; background: #1a1a1a; border: 1.5px solid #fff; color: #fff; font-size: 0.75rem; font-weight: bold; text-decoration: none; border-radius: 4px;">
+      <span>Práctica 1</span> <span>→</span>
+    </a>
+    
+    <!-- Práctica 3 -->
+    <a href="https://antuan94.github.io/Practica-3/" target="_blank" style="display: flex; align-items: center; justify-content: space-between; padding: 0 10px; height: 32px; width: 115px; background: #1a1a1a; border: 1.5px solid #fff; color: #fff; font-size: 0.75rem; font-weight: bold; text-decoration: none; border-radius: 4px;">
+      <span>Práctica 3</span> <span>→</span>
+    </a>
+
+    <!-- Práctica 4 -->
+    <a href="https://antuan94.github.io/Practica-4/" target="_blank" style="display: flex; align-items: center; justify-content: space-between; padding: 0 10px; height: 32px; width: 115px; background: #1a1a1a; border: 1.5px solid #fff; color: #fff; font-size: 0.75rem; font-weight: bold; text-decoration: none; border-radius: 4px;">
+      <span>Práctica 4</span> <span>→</span>
+    </a>
+
+    <!-- Práctica 5 -->
+    <a href="https://antuan94.github.io/Practica-5/" target="_blank" style="display: flex; align-items: center; justify-content: space-between; padding: 0 10px; height: 32px; width: 115px; background: #1a1a1a; border: 1.5px solid #fff; color: #fff; font-size: 0.75rem; font-weight: bold; text-decoration: none; border-radius: 4px;">
+      <span>Práctica 5</span> <span>→</span>
+    </a>
+
+    <!-- Práctica 6 -->
+    <a href="https://antuan94.github.io/Practica-6/" target="_blank" style="display: flex; align-items: center; justify-content: space-between; padding: 0 10px; height: 32px; width: 115px; background: #1a1a1a; border: 1.5px solid #fff; color: #fff; font-size: 0.75rem; font-weight: bold; text-decoration: none; border-radius: 4px;">
+      <span>Práctica 6</span> <span>→</span>
+    </a>
+
+  </div>
+  </div>
+  </body>
+</html>
+

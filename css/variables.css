@@ -1,0 +1,53 @@
+/* variables.css — Tema claro/oscuro y tokens de diseño (importar en styles.css) */
+:root {
+  /* Tipografía */
+  --font-display: "Bangers", "Impact", system-ui, sans-serif;
+  --font-body: "Nunito", "Segoe UI", system-ui, sans-serif;
+  --font-accent: "Permanent Marker", "Comic Sans MS", cursive;
+
+  /* Escala y espaciado */
+  --gutter: clamp(0.6rem, 1.5vw, 1rem);
+  --panel-radius: 4px;
+  --border-w: 4px;
+  --border-w-thick: 6px;
+
+  /* Tema claro (por defecto) */
+  --bg-page: #f6f1e7;
+  --bg-panel: #fffdf8;
+  --bg-caption: #fff4a3;
+  --ink: #1a1a1a;
+  --ink-muted: #3d3d3d;
+  --panel-border: #1a1a1a;
+  --accent: #d62828;
+  --accent-2: #005f99;
+  --shadow: 6px 6px 0 rgba(26, 26, 26, 0.18);
+  --shadow-hover: 10px 10px 0 rgba(26, 26, 26, 0.22);
+  --halftone: radial-gradient(circle, rgba(26, 26, 26, 0.08) 1px, transparent 1px);
+  --halftone-size: 6px 6px;
+  --overlay: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0) 60%);
+  --focus: #ff7b00;
+
+  /* Animación */
+  --ease-pop: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-fast: 180ms;
+  --dur-med: 320ms;
+}
+
+/* Modo oscuro aprovechando variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-page: #121317;
+    --bg-panel: #1d1f26;
+    --bg-caption: #3a3200;
+    --ink: #f4f1ea;
+    --ink-muted: #c7c2b8;
+    --panel-border: #f4f1ea;
+    --accent: #ff5a5f;
+    --accent-2: #4cc9f0;
+    --shadow: 6px 6px 0 rgba(0, 0, 0, 0.45);
+    --shadow-hover: 10px 10px 0 rgba(0, 0, 0, 0.55);
+    --halftone: radial-gradient(circle, rgba(244, 241, 234, 0.08) 1px, transparent 1px);
+    --overlay: linear-gradient(to top, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.05) 60%);
+    --focus: #ffd166;
+  }
+}
